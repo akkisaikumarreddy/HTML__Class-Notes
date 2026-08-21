@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Class Day-4 (Forms)</title>
+
+</head>
+
+<body>
+    <h1>HTML Forms</h1>
+
+    <p>HTML forms, defined using the <strong><u>form</u></strong> tag, are essential for collecting user input on web pages. <br>They include interactive controls like text fields, emails, passwords, checkboxes, radios, and buttons.</p>
+
+    <h3>Basic HTML Form</h3>
+
+    <form>
+        <label for="UserName">UserName</label>   <br>
+        <input type="text" id="username" name="username">   <br><br>
+        
+        <label>Password</label>   <br>
+        <input type="password" id="password" name="password">   <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <hr>
+
+    <h3>Form outside, Fieldset inside {Correct Way}</h3>
+
+    <p>The <u>fieldset</u> is used only for grouping related inputs visually and semantically.<br>
+       When you submit the form, all inputs inside the fieldset are included in the form submission.</p>
+
+    <form>
+        <fieldset>
+            <legend>Personal Info</legend> 
+
+            <label>Name:</label>
+            <input type="text">  <br><br>
+
+            <label>Email:</label>
+            <input type="email">
+
+        </fieldset>
+    </form>
+
+    <hr>
+
+    <h3>fieldset outside, form inside {unusual}</h3>
+
+    <p>
+        <ul>
+            <li>The <strong><u>Fieldset</u></strong> doesn’t actually control form submission — it only groups elements visually.</li>
+            <li>If you put multiple <strong><u>Form</u></strong> tags inside one <strong><u>Fieldset</u></strong>, each form submits separately.</li>
+            <li>This structure is valid HTML but not practical, because fieldsets are meant to group inputs within a single form, not wrap multiple forms.</li>
+        </ul>
+    </p>
+
+    <fieldset>
+        <legend>Personal Info</legend>
+
+        <form>
+
+            <label>Name:</label>
+            <input type="text">  <br><br>
+
+            <label>Email:</label>
+            <input type="email">
+
+        </form>
+          
+    </fieldset>
+
+
+    <hr>
+
+    <h3>Advanced HTML Form</h3>
+
+    <form action="#" method="post"> 
+
+        <!-- we will use methos="post" for more security if we don't give any it will take "get" automatically-->
+
+        <label for="name">Enter Your Full Name: </label>
+        <input type="name" id="name" name="name" required placeholder="Enter Your Name">  
+        
+        <br><br>
+        
+        <label for="email">Email Address: </label>
+        <input type="email" id="email" name="name" required placeholder="email">
+
+        <br><br>
+        
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="pass" required placeholder="Password">
+
+        <br><br>
+
+        <label for="confirmpassword">Confirm Password: </label>
+        <input type="password" id="confirmpassword" name="confirmpass" required placeholder="Confirm Password">
+
+        <br><br>
+        
+        <label for="gender">Gender: </label>
+        <input type="radio" id="gender" name="gender" value="male">Male 
+        <input type="radio" id="gender" name="gender" value="female">Female>
+        <input type="radio" id="gender" name="gender" value="others">Others
+
+        <br><br>
+        
+        <label for="dob">Date Of Birth: </label>
+        <input type="datetime-local"  id="dob" name="dob" required>
+
+        <br><br>
+        
+        <label for="phno">Phone Number: </label>
+        <input type="tel" id="phno" name="phno" value="+91" required>
+        
+        <br><br>
+
+        <label for="age">Age: </label>
+        <input type="number" id="age" name="age" required>
+
+        <br><br>
+
+        <label for="address">Address: </label>                  <br>
+        <textarea id="address" name="address" ></textarea>
+
+        <br><br>
+        
+        <label for="place">Place: </label>
+        <select id="place" name="place" >
+            <optgroup label="Karnataka">
+                <option value=""></option>
+                <option value="">BTM Layout</option>
+                <option value="">HSR Layout</option>
+                <option value="">Tin Factory</option>
+                <option value="">Majestic</option>
+                <option value="">Maratahalli</option>
+            </optgroup>
+            <optgroup label="Hyderabad">
+                <option value="">Charminar</option>
+                <option value="">Golconda</option>
+                <option value="">Tank Bund</option>
+                <option value="">Hitech City</option>
+                <option value="">Begampet</option>
+            </optgroup>
+        </select>
+
+        <br><br>
+        
+        <label for="course">Course: </label>
+        <input type="checkbox" id="course" name="course" value="java">Java
+        <input type="checkbox" id="course" name="course" value="python">Python
+        <input type="checkbox" id="course" name="course" value="my sql">My Sql
+        <input type="checkbox" id="course" name="course" value="c++">C++
+
+        <br><br>
+        
+        <!-- For All Different Types Of Files -->
+        <label for="file">File: </label>
+        <input type="file" id="file" name="file">
+
+        <br><br>
+        
+        <!-- Image file -->
+        <label for="imagefile">Image File: </label>
+        <input type="file" id="imagefile" name="imagefile" accept="image/*">
+
+        <br><br>
+
+        <!-- Audio file -->
+        <label for="audiofile">Audio File: </label>
+        <input type="file" id="audiofile" name="audiofile" accept="audio/*">
+
+        <br><br>
+
+        <!-- Video file -->
+        <label for="videofile">Video File: </label>
+        <input type="file" id="videofile" name="videofile" accept="video/*">
+
+        <br><br>
+
+        <!-- PDF file -->
+        <label for="pdffile">PDF File: </label>
+        <input type="file" id="pdffile" name="pdffile" accept="application/pdf">
+
+        <br><br>
+
+        <!-- Word Document -->
+        <label for="docfile">Word Document: </label>
+        <input type="file" id="docfile" name="docfile" accept=".doc,.docx">
+
+        <br><br>
+
+        <!-- Excel File -->
+        <label for="excelfile">Excel File: </label>
+        <input type="file" id="excelfile" name="excelfile" accept=".xls,.xlsx">
+
+        <br><br>
+
+        <!-- Text File -->
+        <label for="textfile">Text File: </label>
+        <input type="file" id="textfile" name="textfile" accept=".txt">
+
+        <br><br>
+
+        <button type="submit">Submit</button>
+      
+        <input type="reset" value="reset">
+    </form>
+
+    <hr>
+
+    <h1>Applying Elements to Form</h1>
+
+    <h3>Fieldset</h3>
+
+    <p><strong><u>Fieldset</u></strong> is used to draw a box around other form elements and group the related data.</p>
+
+    <h3>Legend</h3>
+
+    <p><strong><u>legend</u></strong> defines a caption for fieldset elements</p>
+
+    <form action="#" method="post" align="center">
+        <fieldset>
+            <legend>User Personal Information</legend>
+
+            <label for="name">Enter Your Full Name: </label>
+            <input type="name" id="name" name="name" required placeholder="Enter Your Name">  
+        
+            <br><br>
+        
+            <label for="email">Email Address: </label>
+            <input type="email" id="email" name="name" required placeholder="email">
+
+            <br><br>
+        
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="pass" required placeholder="Password">
+
+            <br><br>
+
+            <label for="confirmpassword">Confirm Password: </label>
+            <input type="password" id="confirmpassword" name="confirmpass" required placeholder="Confirm Password">
+
+            <br><br>
+        
+            <label for="gender">Gender: </label>
+            <input type="radio" id="gender" name="gender" value="male">Male 
+            <input type="radio" id="gender" name="gender" value="female">Female>
+            <input type="radio" id="gender" name="gender" value="others">Others
+
+            <br><br>
+        
+            <label for="dob">Date Of Birth: </label>
+            <input type="datetime-local"  id="dob" name="dob" required>
+
+            <br><br>
+        
+            <label for="phno">Phone Number: </label>
+            <input type="tel" id="phno" name="phno" value="+91" required>
+        
+            <br><br>
+
+            <label for="age">Age: </label>
+            <input type="number" id="age" name="age" required>
+
+            <br><br>
+
+            <label for="address">Address: </label>                  <br>
+            <textarea id="address" name="address" ></textarea>
+
+            <br><br>
+            
+            <label for="place">Place: </label>
+            <select id="place" name="place" >
+                <optgroup label="Karnataka">
+                    <option value=""></option>
+                    <option value="">BTM Layout</option>
+                    <option value="">HSR Layout</option>
+                    <option value="">Tin Factory</option>
+                    <option value="">Majestic</option>
+                    <option value="">Maratahalli</option>
+                </optgroup>
+                <optgroup label="Hyderabad">
+                    <option value="">Charminar</option>
+                    <option value="">Golconda</option>
+                    <option value="">Tank Bund</option>
+                    <option value="">Hitech City</option>
+                    <option value="">Begampet</option>
+                </optgroup>
+            </select>
+
+            <br><br>
+            
+            <label for="course">Course: </label>
+            <input type="checkbox" id="course" name="course" value="java">Java
+            <input type="checkbox" id="course" name="course" value="python">Python
+            <input type="checkbox" id="course" name="course" value="my sql">My Sql
+            <input type="checkbox" id="course" name="course" value="c++">C++
+
+            <br><br>
+            
+            <!-- For All Different Types Of Files -->
+            <label for="file">File: </label>
+            <input type="file" id="file" name="file">
+
+            <br><br>
+            
+            <!-- Image file -->
+            <label for="imagefile">Image File: </label>
+            <input type="file" id="imagefile" name="imagefile" accept="image/*">
+
+            <br><br>
+
+            <!-- Audio file -->
+            <label for="audiofile">Audio File: </label>
+            <input type="file" id="audiofile" name="audiofile" accept="audio/*">
+
+            <br><br>
+
+            <!-- Video file -->
+            <label for="videofile">Video File: </label>
+            <input type="file" id="videofile" name="videofile" accept="video/*">
+
+            <br><br>
+
+            <!-- PDF file -->
+            <label for="pdffile">PDF File: </label>
+            <input type="file" id="pdffile" name="pdffile" accept="application/pdf">
+
+            <br><br>
+
+            <!-- Word Document -->
+            <label for="docfile">Word Document: </label>
+            <input type="file" id="docfile" name="docfile" accept=".doc,.docx">
+
+            <br><br>
+
+            <!-- Excel File -->
+            <label for="excelfile">Excel File: </label>
+            <input type="file" id="excelfile" name="excelfile" accept=".xls,.xlsx">
+
+            <br><br>
+
+            <!-- Text File -->
+            <label for="textfile">Text File: </label>
+            <input type="file" id="textfile" name="textfile" accept=".txt">
+
+            <br><br>
+
+            <button type="submit">Submit</button>
+        
+            <input type="reset" value="reset">
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

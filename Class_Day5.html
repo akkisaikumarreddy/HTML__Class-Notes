@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>HTML Class Day-5</title>
+
+</head>
+
+<body>
+    <h1>HTML Block and Inline Elements</h1>
+
+    <p>
+        In HTML, elements are categorized into two primary display behaviors: <br>
+        <strong><u>Block-Level Elements</u></strong>, which always start on a new line and span the full available width.<br>
+        <strong><u>InLine  Elements</u></strong>, which sit within the text flow and only take up as much space as their content requires.
+    </p>
+
+    <table border="1" cellpadding="2" cellspacing="0" width="70%" align="center">
+        <tr>
+            <th>Features</th>
+            <th>Block-Level</th>
+            <th>InLine</th>
+        </tr>
+        <tr>
+            <th>Line Behaviour</th>
+            <td>Always starts on a new line.</td>
+            <td>Continues on the same line.</td>
+        </tr>
+        <tr>
+            <th>Width</th>
+            <td>Occupies Full 100% Width of the WebPage</td>
+            <td>Occupies Only the width of its content.</td>
+        </tr>
+        <tr>
+            <th>CSS Box Model</th>
+            <td>Height and width can be customized.</td>
+            <td>Direct height and width properties are ignored.</td>
+        </tr>
+        <tr>
+            <th>Nesting</th>
+            <td>Can hold/contain other block elements or inline elements.</td>
+            <td>Can only hold/contain other inline elements.</td>
+        </tr>
+    </table>
+
+    <h2>HTML Block Elements</h2>
+    <p>
+        <ul>
+            <li>A block-level element always starts on a new line and stretches out to the left and right as far as it can i.e,</li>
+            <li>It occupies the whole horizontal space of its parent element.</li>
+            <li>The height is equal to the content's height.</li>
+        </ul>
+    </p>
+    <p>The <strong><u>div</u></strong> element is used as a container for other HTML elements. It has no required attributes. Style, class, and id are the commonly used attributes.</p>
+
+    <div style="background-color: orange;">This is a div (Block-Level)</div>
+    <p style="background-color: blue;">This is a Paragraph (Block-Level)</p>
+    <address style="background-color: green;">BTM Layout, Bangalore, Karnataka, 576005. (Block-Level)</address>
+
+    <br>
+    <hr>
+
+    <h2>HTML Inline Elements</h2>
+    <p>
+        <ul>
+            <li>An inline element is the opposite of the block-level elemrnt.</li>
+            <li>It does not start on a new line and takes up only the necessary width ie., it only occupies the space bounded by the tags defining the HTML element, instead of breaking the flow of the content. </li>
+        </ul>
+    </p>
+    <p>The <strong><u>span</u></strong> tag is used as a container for text. It has no required attributes. Style, class, and id are the commonly used attributes.</p>
+
+    <span style="background-color: orange;">This is a span (InLine Element)</span>
+    <u style="background-color: blue;">UnderLine (InLine Element)</u>
+    <strong style="background-color: green;">Bold Text(InLine Element)</strong>
+
+</body>
+
+</html>

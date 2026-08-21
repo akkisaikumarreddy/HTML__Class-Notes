@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>HTML Class Day-2</title>
+
+</head>
+
+<body>
+    <h2>image tag</h2>
+    <!-- The <img> tag in HTML is used to embed an image in a webpage.
+        It is an empty (self-closing) element, which means it only contains attributes and does not require a closing tag like.-->
+    
+    <!-- SYNTAX : 
+                  <img src="./image.png" alt="image description" width="200" height="100">
+    -->
+    
+    <img src="Images/Ichigo.jpg" alt="Ichigo" width="500" height="300">
+
+    <br>
+
+    <img src="Images/Naruto.jpg" alt="Naruto" width="500" height="300">
+
+    <h4>src attribute</h4>
+
+    <p>The <u>src attribute</u> defines the path or URL of the image that the browser fetches and displays inside the <u>img</u> tag.<br>
+       It is a mandatory attribute because, without it, the image cannot be rendered on the web page
+    </p>
+
+    <h4>alt attribute</h4>
+
+    <p>The <u>alt attribute</u> provides alternative text for an image if the image cannot be displayed.<br>
+       It is important for accessibility, as it helps screen readers describe the image to visually impaired users.<br>
+       It also serves as a fallback in case the image fails to load.
+    </p> 
+
+    <h4>width and height attributes</h4>
+
+    <p>The <u>width</u> and <u>height</u> attributes specify the dimensions of the image in pixels.<br>
+       They help control the size of the image displayed on the web page.<br>
+       If not specified, the image will be displayed at its original size.
+    </p>
+
+    <hr>
+
+    <h2>anchor tag</h2>
+    <!-- The <a> tag in HTML is used to create a hyperlink.
+         It allows users to navigate to another page or resource when clicked.
+         The href attribute specifies the URL of the page the link goes to. -->
+
+    <p>
+        Link to an External Website: <br>
+
+       <a href="https://www.google.com/" target="_blank">Visit Google in a new Tab or Window</a>        <br>
+
+       <a href="https://www.google.com/" target="_self">Visit Google in the same Tab or Window</a>      <br>
+
+       <a href="https://www.google.com/" target="_parent">Visit Google in the Parent Frame</a>          <br>
+
+       <a href="https://www.google.com/" target="_top">Visit Google in the Full Body of the Window</a>  <br>
+       
+       Link to an Email Adress: <br>
+
+       <a href="mailto:saikumarreddyakki288@gmail.com">Send Email</a>   <br>
+
+       Link to a Phone Number: <br>
+
+       <a href="tel:+918297653116">call me</a>   <br>
+
+       Link to a Specific Section of a Page:     <br>
+
+       <a href="#section1">Go to Section 1</a>   <br>
+    </p>
+
+    <hr>
+
+    <h2>I-frame tag</h2>
+    <!-- The <iframe> (inline frame) tag in HTML is used to embed another HTML document within the current document.
+         It creates an inline frame that can display content from another source, such as a webpage or video. -->
+    
+    <!-- 
+         SYNTAC :- 
+                   <iframe src="https://www.geeksforgeeks.org/"   title="GeeksforGeeks">  </iframe>
+    -->
+                
+    <iframe src="https://www.google.com/" title="Official Google Website" width="500" height="300"></iframe>
+
+    <hr>
+
+    <h2>Media tags</h2>
+
+    <p>There is no single <u>media</u>tag in HTML; instead, "media tags" refers to a group of elements used to embed multimedia like images, audio, and video directly into a webpage.</p>
+
+    <h4>Core HTML Media Tags</h4>
+    <p>
+        <u>img</u> tag    : Embeds static or animated images.              <br>
+        <u>video</u> tag  : Embeds video content directly on the page.     <br>
+        <u>audio</u> tag  : Embeds sound files and music streams.          <br>
+        <u>source</u> tag : Defines multiple media alternatives inside video, audio, or picture tags.   <br>
+        <u>track</u> tag  : Adds text-based subtitles, captions, or descriptions to audio and video.    <br>
+        <u>iframe</u> tag : Embeds an external web page or hosted media, like a YouTube video.
+    </p>
+    
+    <h2>HTML Space Entitles</h2>
+    <p>
+        In HTML, the browser automatically collapses multiple consecutive spaces into a single space. To add extra, visible spaces, you must use HTML character entities or specific CSS properties.
+        <ul>
+            <!-- it should be like this  &nbsp;    &ensp ;    &emsp ;    &thinsp; -->
+            <li><strong>&nbsp ; </strong> - Non-breaking space. Standard space width.</li>
+            <li><strong>&ensp ;</strong> - En space. Twice the width of a normal space.</li>
+            <li><strong>&emsp ;</strong> - Em space. Four times the width of a normal space.</li>
+            <li><strong>&thinsp ;</strong> - Thin space. Narrower than a regular space</li>
+        </ul>
+    </p>
+</body>
+</html>

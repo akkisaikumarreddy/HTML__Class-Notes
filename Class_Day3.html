@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Class Day-3</title>
+
+</head>
+
+<body>
+
+    <h1>HTML LISTS</h1>
+
+    <p>An HTML list organizes content into ordered or unordered formats, making information clear and easy to read.<br>
+       HTML lists organize content using tags like ul, ol & li. <br>
+       They improve readability by presenting data in a structured format.
+    </p>
+    
+    <h4>Types of HTML Lists</h4>
+
+    <p>
+        1. Unordered List (ul): Displays items with bullet points. Where the order of items does not matter, using the ul and li tags.<br>
+        2. Ordered List (ol): Displays items with numbers or letters. Where the order of items matters, using the ol and li tags.<br>
+        3. Description List (dl): Displays items with terms and descriptions. Where you want to provide a list of terms and their corresponding descriptions, using the dl, dt, and dd tags.
+    </p>
+
+    <hr>
+
+    <h2>Unordered List (ul)</h2>
+
+    <p>In HTML, unordered lists (ul) are used to display items without any specific order, and by default, they show bullet points.<br> However, the appearance of these bullets can be changed using CSS with different styles.</p>
+
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <h4>Square Bullet Style</h4>
+
+    <ul style="list-style-type: square;">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <h4>Circle Bullet Style</h4>
+
+    <ul style="list-style-type: circle;">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <h4>Disc Bullet Style</h4>
+
+    <ul style="list-style-type: disc;">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <h4>None Bullet Style</h4>
+
+    <ul style="list-style-type: none;">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <h4>Nested Unordered List</h4>
+
+    <ul>
+        <li>HTML</li>
+           <ul>
+             <li>Html Tags</li>
+             <li>Html Attributes</li>
+             <li>Html Elements</li>
+           </ul>
+
+        <li>CSS</li>
+            <ul>
+                <li>Css Selectors</li>
+                <li>Css Properties</li>
+                <li>Css Values</li>
+            </ul>
+
+        <li>JavaScript</li>
+    </ul>
+
+    <hr>
+
+    <h2>Ordered List (ol)</h2>
+
+    <p>In HTML, ordered lists (ol) are used to display items in a specific order, and by default, they show numbers.<br> However, the appearance of these numbers can be changed using CSS with different styles.</p>
+
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+
+    <H4>Different Type Attributes in HTML Ordered List</H4>
+
+    <P>
+        The type attribute of (ol) tag specifies the order we want to create.   <br>
+
+        1. type="1": This will list the items with numbers (default)            <br>
+        2. type="A": This will list the items in uppercase letters.             <br>
+        3. type="a": This will list the items in lowercase letters.             <br>
+        4. type="I": This will list the items with uppercase Roman numbers.     <br>
+        5. type="i": This will list the items with lowercase Roman numbers.
+    </P>
+
+    <h4>Numbered Ordered List</h4>
+
+    <ol>
+        <li>Python</li>
+        <li>Java</li>
+        <li>c#</li>
+        <li>c++</li>
+    </ol>
+
+    <h4>Uppercase Letters Ordered List</h4>
+
+    <ol type="A">
+        <li>Python</li>
+        <li>Java</li>
+        <li>c#</li>
+        <li>c++</li>
+    </ol>
+
+    <h4>Lowercase Letters Ordered List</h4>
+
+    <ol type="a">
+        <li>Python</li>
+        <li>Java</li>
+        <li>c#</li>
+        <li>c++</li>
+    </ol>
+
+    <h4>Uppercase Roman Numbers Ordered List</h4>
+
+    <ol type="I">
+        <li>Python</li>
+        <li>Java</li>
+        <li>c#</li>
+        <li>c++</li>
+    </ol>
+
+    <h4>Lowercase Roman Numbers Ordered List</h4>
+
+    <ol type="i">
+        <li>Python</li>
+        <li>Java</li>
+        <li>c#</li>
+        <li>c++</li>
+    </ol> 
+
+    <h4>Reverse Ordered List</h4>
+
+    <ol reversed>
+        <li>Python</li>
+        <li>Java</li>
+        <li>c#</li>
+        <li>c++</li>
+    </ol>
+
+    <h4>Control List Counting or Start Order List from a Specific Number</h4>
+
+    <ol start="5">
+        <li>Python</li>
+        <li>Java</li>
+        <li>c#</li>
+        <li>c++</li>
+    </ol>
+
+    <h4>Nested Ordered List</h4>
+
+    <ol>
+        <li>Python</li>
+              <ol>
+                 <li>Python Basics</li>
+                 <li>Python Advanced</li>
+                 <li>Python Libraries</li>
+              </ol>
+        <li>Java</li>
+                <ol>
+                 <li>Java Basics</li>
+                 <li>Java Advanced</li>
+                 <li>Java Libraries</li>
+                </ol>
+        <li>c#</li>
+                <ol>
+                 <li>c# Basics</li>
+                 <li>c# Advanced</li>
+                 <li>c# Libraries</li>
+                </ol>
+        <li>c++</li>
+                <ol>
+                 <li>c++ Basics</li>
+                 <li>c++ Advanced</li>
+                 <li>c++ Libraries</li>
+                </ol>
+    </ol>
+
+    <h4>Double lettered Ordered List</h4>
+    
+    <ol  type="A" start="27">
+        <li>Python</li>
+        <li>Java</li>
+        <li>c#</li>
+        <li>c++</li>
+    </ol>
+
+    <ol  type="a" start="27">
+        <li>Python</li>
+        <li>Java</li>
+        <li>c#</li>
+        <li>c++</li>
+    </ol>
+
+    <hr>
+
+    <h2>Description List (dl)</h2>
+
+    <p>Description lists in HTML are used to display terms and their corresponding descriptions in a structured format.<br>
+       Created using (dl), (dt), and (dd) tags.<br>
+       (dt) defines the term.                  <br>
+       (dd) defines its description of the term.<br>
+       Commonly used for glossaries, definitions, and metadata lists.
+    </p>
+
+    <dl>
+        <dt>HTML:</dt>
+        <dd>HTML (HyperText Markup Language) is the standard language for creating and structuring web pages using tags and elements.</dd>
+
+        <dt>CSS:</dt>
+        <dd>CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written in HTML or XML.</dd>
+
+        <dt>JavaScript:</dt>
+        <dd>JavaScript is a programming language that enables interactive web pages and is an essential part of web applications.</dd>
+    </dl>
+
+    <hr>
+
+    <h2>semantic Tags</h2>
+
+    <p> 
+        Semantic Elements provide meaningful tags that clearly describe their purpose, improving readability, accessibility, and SEO for both humans and browsers.<br>
+        <ul>
+            <li>Clearly define the role and content of elements.</li>
+            <li>Improve code readability and structure.</li>
+            <li>Enhance accessibility for screen readers</li>
+            <li>Help browsers and search engines understand page content.</li>
+        </ul>
+    </p>
+
+    <hr>
+
+    <h2>The Header Tag</h2>
+
+    <p>As the name suggests, it is for the header of a section introductory of a page. There can be multiple headers on a page.</p>
+
+    <header>
+        <h2>Web Development</h2>
+        <h3>Html Tutorial</h3>
+        <h4>Html Tags</h4>
+    </header>
+
+    <hr>
+
+    <h2>div tag</h2>
+
+    <p>The <u>div</u> tag is one of the most widely used HTML elements, helping divide a webpage into clear, structured sections.<br>It acts as a flexible container for text, images, and links, easily styled and customized with CSS.
+        <ul>
+            <li>div is commonly used to organize and structure webpage content.</li>
+            <li>It is block level but can act inline with display: inline-block.</li>
+            <li>It can be easily styled with CSS for color, spacing, size, and layout.</li>
+        </ul>
+    </p>
+
+    <div >The first div tag with some content without using CSS</div>
+
+    <div style="background-color: lightgreen; padding: 20px; border: 2px solid green;">The second div tag with some content with using CSS</div>
+
+    <div style="background-color: lightcoral; padding: 20px; border: 2px solid red;">The third div tag with some content with using CSS</div>
+
+    <hr>
+
+    <h2>article Tag</h2>
+
+    <p>
+        The HTML <u>article</u> tag defines a self-contained, independent piece of content that can be reused or distributed separately.
+        <ul>
+            <li>Used for content like blog posts, news articles, or forum posts.</li>
+            <li>Represents independent and meaningful sections of a webpage.</li>
+            <li>Can contain headings, paragraphs, images, and other elements.</li>
+        </ul>
+    </p>
+
+    <article>
+        <h2>Understanding HTML</h2>
+        <p>HTML (HyperText Markup Language) is the standard language for creating and structuring web pages using tags and elements.</p>
+    </article>
+
+    <hr>
+
+    <h2>aside Tag</h2>
+
+    <p>The <u>aside</u> is used to place content in a sidebar i.e. aside from the existing content. It is related to surrounding content.</p>
+
+    <aside>
+        <h3>Sidebar Content</h3>
+        <p>This is some content that will be displayed in the sidebar.</p>
+    </aside>
+
+    <hr>
+
+    <h2>The Details and Summary Tag</h2>
+
+    <p>The <u>details</u> tag defines additional details that the user can hide or view. <br><u>summary</u> defines a visible heading for a "details" element.</p>
+
+    <details>
+        <summary>HTML</summary>
+        <p>HTML (HyperText Markup Language) is the standard language for creating and structuring web pages using tags and elements.</p>
+    </details>
+
+    <hr>
+
+    <h2>figure and figcaption Tags</h2>
+
+    <p>The <u>figure</u> tag in HTML is used to include self-contained content like images, diagrams, or code that is related to the main content but can stand independently.</p>
+
+    <p>The <u>figcaption</u> tag is used to define a caption for the <u>figure</u> element.</p>
+
+    <figure>
+        <img src="Images/Luffy.jpg" alt="Luffy" width="300" height="200">
+        <figcaption>Monkey D. Luffy</figcaption> 
+    </figure>
+
+    <hr>       
+
+    <h2>Main Tag</h2>
+
+    <p>The <u>main</u> tag specifies the main content of a webpage.</p>
+
+    <main>
+        <h3>Main Content</h3>
+        <p>This is the main content of the page.</p>
+
+        <article>
+            <h2>Understanding HTML</h2>
+            <p>HTML (HyperText Markup Language) is the standard language for creating and structuring web pages using tags and elements.</p>
+        </article>
+    </main>
+
+    <hr>
+    
+    <h2>Section Tag</h2>
+
+    <p>The <u>section</u> tag is used to define a section in a document.</p>
+
+    <section>
+        <h3>Section 1</h3>
+        <p>This is the first section of the page.</p>
+    </section>
+
+    <hr>
+
+    <h2>nav Tag</h2>
+
+    <p>The <u>nav</u> tag is used to define a section of navigation links on a webpage.</p>
+
+    <nav>
+        <a href="https://www.google.com/" target="_blank">Visit Google</a>    <br>
+        <a href="https://www.youtube.com/" target="_blank">Visit YouTube</a>  <br>
+        <a href="https://www.facebook.com/" target="_blank">Visit Facebook</a>
+    </nav>
+
+    <hr>
+
+    <h2>footer Tag</h2>
+
+    <p>The <u>footer</u> tag is used to define a footer for a document or section.</p>
+
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+
+    <hr>
+
+    <h2>Time Tag</h2>
+
+    <p>The <u>time</u> tag is used to define a specific time or date.</p>
+
+    <p>This article published on <time datetime="2026-06-06">June 6, 2026</time>.</p>
+
+    <p>I slept at <time datetime="22:00">10:00 PM</time>.</p>
+
+    <hr>
+
+    <h1>Tables in HTML</h1>
+
+    <p>HTML tables organize data into a two-dimensional grid of rows and columns.<br>They are built using structural tags like <u>table</u>, <u>tr</u>, <u>th</u>, and <u>td</u> to display structured information like schedules, price lists, or financial data
+        <dl>
+            <dt>table Tag:</dt>
+            <dd>The wrapper for the entire table</dd>
+
+            <dt>tr Tag:</dt>
+            <dd>Defines a table row.</dd>
+
+            <dt>th Tag:</dt>
+            <dd>Defines a header cell (bold and centered by default).</dd>
+
+            <dt>td Tag:</dt>
+            <dd>Defines a table data cell that holds actual content.</dd>
+        </dl>
+    </p>
+
+    <p>
+        <strong>Caption :</strong>Caption Tag provides a title or description for the entire table.
+        <strong>thead :</strong>thead Tag defines the header section of a table, often containing column labels.
+        <strong>tbody :</strong>tbody Tag represents the main content area of a table, separating it from the header or footer.
+        <strong>tfoor :</strong>tfoot Tag specifies the footer section of a table, typically holding summaries or totals.
+        <strong>col :</strong>col Tag defines attributes for table columns that can be applied to multiple columns simultaneously.
+        <strong>colgroup :</strong>groups together a set of columns in a table to which you can apply formatting or properties collectively.
+    </p>
+
+    <h4>Creating a simple table in HTML using a table tag</h4>
+
+    <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+        </tr>
+        <tr>
+            <td>Akki</td>
+            <td>Sai</td>
+            <td>23</td>
+            <td>Male</td>
+        </tr>
+        <tr>
+            <td>meena</td>
+            <td>naidu</td>
+            <td>25</td>
+            <td>Female</td>
+        </tr>
+        <tr>
+            <td>yash</td>
+            <td>reddy</td>
+            <td>22</td>
+            <td>Male</td>
+        </tr>
+    </table>
+
+    <h4>Adding a Border to an HTML Table</h4>
+
+    <!-- use CSS style inside use border  style attribute -->
+
+    <table style="width: 50%; border: 3px solid black;">
+        <tr>
+            <th style="border: 2px solid black;">Firstname</th>
+            <th style="border: 2px solid black;">Lastname</th>
+            <th style="border: 2px solid black;">Age</th>
+        </tr>
+        <tr>
+            <td style="border: 2px solid black;">Priya</td>
+            <td style="border: 2px solid black;">Sharma</td>
+            <td style="border: 2px solid black;">24</td>
+        </tr>
+            <tr>
+            <td style="border: 2px solid black;">Arun</td>
+            <td style="border: 2px solid black;">Singh</td>
+            <td style="border: 2px solid black;">32</td>
+        </tr>
+        <tr>
+            <td style="border: 2px solid black;">Sam</td>
+            <td style="border: 2px solid black;">Watson</td>
+            <td style="border: 2px solid black;">41</td>
+        </tr>
+    </table>
+
+<br>
+
+
+    <h4>Adding Border Spacing in an HTML Table table {border-spacing: 20px;}</h4>
+
+    <table style="width: 50%; border: 3px solid black; border-spacing: 15px;">
+        <tr>
+            <th style="border: 2px solid black;">Firstname</th>
+            <th style="border: 2px solid black;">Lastname</th>
+            <th style="border: 2px solid black;">Age</th>
+        </tr>
+        <tr>
+            <td style="border: 2px solid black;">Priya</td>
+            <td style="border: 2px solid black;">Sharma</td>
+            <td style="border: 2px solid black;">24</td>
+        </tr>
+        <tr>
+            <td style="border: 2px solid black;">Arun</td>
+            <td style="border: 2px solid black;">Singh</td>
+            <td style="border: 2px solid black;">32</td>
+        </tr>
+        <tr>
+            <td style="border: 2px solid black;">Sam</td>
+            <td style="border: 2px solid black;">Watson</td>
+            <td style="border: 2px solid black;">41</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <h4>Adding Collapsed Borders in an HTML Table</h4>
+
+    <!-- use CSS style inside use border-collapse : collapse style attribute -->
+    <table style="width: 50%; border: 3px solid black; border-collapse: collapse;">
+        <tr>
+            <th style="border: 2px solid black;">Firstname</th>
+            <th style="border: 2px solid black;">Lastname</th>
+            <th style="border: 2px solid black;">Age</th>
+        </tr>
+        <tr>
+            <td style="border: 2px solid black;">Priya</td>
+            <td style="border: 2px solid black;">Sharma</td>
+            <td style="border: 2px solid black;">24</td>
+        </tr>
+        <tr>
+            <td style="border: 2px solid black;">Arun</td>
+            <td style="border: 2px solid black;">Singh</td>
+            <td style="border: 2px solid black;">32</td>
+        </tr>
+        <tr>
+            <td style="border: 2px solid black;">Sam</td>
+            <td style="border: 2px solid black;">Watson</td>
+            <td style="border: 2px solid black;">41</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <h4>Adding Cell Padding in an HTML Table</h4>
+    <p>Cell padding specifies the space between the cell content and its borders. If we do not specify a padding, the table cells will be displayed without padding</p>
+    <p>padding is the space inside an element, located between its content and its border</p>
+
+    <table style="width: 50%; border: 3px solid black; border-collapse: collapse;">
+        <tr>
+            <th style="border: 2px solid black; padding: 25px;">Firstname</th>
+            <th style="border: 2px solid black; padding: 25px;">Lastname</th>
+            <th style="border: 2px solid black; padding: 25px;">Age</th>
+        </tr>
+        <tr>
+            <td style="border: 2px solid black; padding: 25px;">Priya</td>
+            <td style="border: 2px solid black; padding: 25px;">Sharma</td>
+            <td style="border: 2px solid black; padding: 25px;">24</td>
+        </tr>
+        <tr>
+            <td style="border: 2px solid black; padding: 25px;">Arun</td>
+            <td style="border: 2px solid black; padding: 25px;">Singh</td>
+            <td style="border: 2px solid black; padding: 25px;">32</td>
+        </tr>
+        <tr>
+            <td style="border: 2px solid black; padding: 25px;">Sam</td>
+            <td style="border: 2px solid black; padding: 25px;">Watson</td>
+            <td style="border: 2px solid black; padding: 25px;">41</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Rowspan and Colspan in HTML Table</h2>
+
+    <p>Rowspan and colspan are powerful HTML table attributes that let you merge cells vertically and horizontally. They make complex table structures cleaner, more flexible, and easier to understand.
+        <ul>
+            <li>rowspan controls how many rows a cell spans vertically.</li>
+            <li>colspan defines how many columns a cell spans horizontally.</li>
+            <li>Widely used in complex tables, about 80–90% rely on them for better layout and readability.</li>
+        </ul>
+    </p>
+
+    <h4>HTML Table with Colspan</h4>
+
+    <p>HTML Table with colspan allows you to merge or combine adjacent table cells horizontally, creating a single, wider cell that spans across multiple columns.</p>
+
+    <p><strong><u>The colspan is defined as the (th) element.</u></strong></p>
+
+    <table style="width: 50%; border: 3px solid black; border-collapse: collapse;">
+        <tr>
+            <th style="border: 2px solid black; padding: 25px;" colspan="2">Name</th>
+            <th style="border: 2px solid black; padding: 25px;">Age</th>
+        </tr>
+        <tr>
+            <td style="border: 2px solid black; padding: 25px;">Priya</td>
+            <td style="border: 2px solid black; padding: 25px;">Sharma</td>
+            <td style="border: 2px solid black; padding: 25px;">24</td>
+        </tr>
+        <tr>
+            <td style="border: 2px solid black; padding: 25px;">Arun</td>
+            <td style="border: 2px solid black; padding: 25px;">Singh</td>
+            <td style="border: 2px solid black; padding: 25px;">32</td>
+        </tr>
+        <tr>
+            <td style="border: 2px solid black; padding: 25px;">Sam</td>
+            <td style="border: 2px solid black; padding: 25px;">Watson</td>
+            <td style="border: 2px solid black; padding: 25px;">41</td>
+        </tr>
+    </table>
+
+    <h4>HTML Table with Rowspan</h4>
+
+    <p>The HTML attribute rowspan determines how many rows a specific cell in a table should cover. When a cell spans multiple rows, it occupies the space of those rows within the table.</p>
+
+    <table style="width: 50%; border: 3px solid black; border-collapse: collapse;">
+        <tr>
+            <th style="border: 2px solid black; padding: 25px;">Firstname</th>
+            <th style="border: 2px solid black; padding: 25px;">Lastname</th>
+            <th style="border: 2px solid black; padding: 25px;">Age</th>
+        </tr>
+        <tr>
+            <td style="border: 2px solid black; padding: 25px;">Priya</td>
+            <td style="border: 2px solid black; padding: 25px;">Sharma</td>
+            <td style="border: 2px solid black; padding: 25px;" rowspan="3">24</td>
+        </tr>
+        <tr>
+            <td style="border: 2px solid black; padding: 25px;">Arun</td>
+            <td style="border: 2px solid black; padding: 25px;">Singh</td>
+        </tr>
+        <tr>
+            <td style="border: 2px solid black; padding: 25px;">Sam</td>
+            <td style="border: 2px solid black; padding: 25px;">Watson</td>
+        </tr>
+    </table>
+
+    <p><strong><u>Applied within a (td) or (th) element.</u></strong></p>
+
+    <table style="width: 50%; border: 3px solid black; border-collapse: collapse;">
+        <tr>
+            <th style="border: 2px solid black; padding: 25px;">Firstname</th>
+            <th style="border: 2px solid black; padding: 25px;">Lastname</th>
+            <th style="border: 2px solid black; padding: 25px;" rowspan="4">Narayana College</th>
+        </tr>
+        <tr>
+            <td style="border: 2px solid black; padding: 25px;">Priya</td>
+            <td style="border: 2px solid black; padding: 25px;">Sharma</td>
+        </tr>
+        <tr>
+            <td style="border: 2px solid black; padding: 25px;">Arun</td>
+            <td style="border: 2px solid black; padding: 25px;">Singh</td>
+        </tr>
+        <tr>
+            <td style="border: 2px solid black; padding: 25px;">Sam</td>
+            <td style="border: 2px solid black; padding: 25px;">Watson</td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>

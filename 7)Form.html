@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Forms</title>
+
+</head>
+
+<body>
+    
+    <h1 style="text-align: center; background-color: aquamarine;">Forms</h1>
+
+    <p>
+        &lt;Form&gt; tag is used to create an HTML form that collects user input and sends it to a server for processing.<br>
+        It acts as a container for interactive controls like text fields, checkboxes, and submission buttons.
+        <ul>
+            <li>Acts as a container for input elements like text fields, checkboxes, and buttons.</li>
+            <li>Enables data submission using GET/POST and supports attributes like action, method, and enctype.</li>
+        </ul>
+    </p>
+
+    <p>Here is the Basic Form</p>
+
+    <p>
+        <ul>
+            <li><strong>&lt;from&gt; :</strong> Defines a form where users can enter data.</li>
+            <li><strong>action="/submit" :</strong>Tells the browser where to send the form data after submission. Here, it will send to /submit (a server endpoint).</li>
+            <li><strong>method="POST" :</strong>Specifies how data is sent. POST means the data goes in the request body (commonly used for secure submissions like login, registration).</li>
+            <li><strong>&lt;label for="firstname"&gt; :</strong>Associates the text "First Name" with the input field whose id="firstname". Clicking the label focuses the input box.</li>
+            <li><strong>&lt;input&gt;Attributes :</strong>
+                <ul style="list-style-type: circle;">
+                    <li><strong>id="firstname" :</strong>Unique identifier for the field.</li>
+                    <li><strong>name="firstname" :</strong>The key used when sending data to the server (e.g., firstname=John).</li>
+                    <li><strong>placeholder="Enter your first name" :</strong>Shows hint text inside the box until the user types.</li>
+                    <li><strong>required :</strong>Makes the field mandatory.</li>
+                    <li><strong>type="text" :</strong>Defines it as a single-line text input.</li>
+                </ul>
+            </li>
+            <li><strong>type="submit" :</strong>Triggers the form submission.</li>
+            <li><strong>value="Submit" :</strong>Text displayed on the button.</li>
+            <li>
+                <strong>Why  /  in your code :</strong>
+                <ul>
+                    <li>It’s just a stylistic choice or compatibility measure. Some developers prefer &lt; input   / &gt; </li>
+                    <li>It looks cleaner and makes it obvious the tag is self-contained.</li>
+                    <li>It works in both HTML and XHTML parsers.</li>
+                </ul>
+            </li>
+        </ul>
+    </p>
+
+    <h1>Basic Information Form</h1>
+
+    <form action="/submit" method="post">
+
+        <h3>User Information</h3>
+
+        <label for="firstname">First Name :</label>
+        <input type="text" id="firstname" name="firstname" placeholder="Enter Your First Name" required /> <br><br>
+
+        <label for="lastname">Last Name :</label>
+        <input type="text" id="lastname" name="lastname" placeholder="Enter Your Last Name" required /> <br><br>
+
+        <input type="submit" value="Submit" />
+
+    </form>
+
+    <hr style="height: 2px; background: black;">
+
+    <h1>Form with Radio button</h1>
+
+    <form action="#" method="post">
+
+        <h3>Gender Validation</h3>
+
+        <label for="gender">Gender: </label>
+        <input type="radio" id="gender" name="gender" value="male" />Male
+        <input type="radio" id="gender" name="gender" value="female" />Female
+        <input type="radio" id="gender" name="gender" value="other" />Others     <br><br>
+
+        <input type="submit" value="Submit" />
+
+    </form>
+
+    <hr style="height: 2px; background: black;">
+
+    <h1>Form with Checkbox</h1>
+
+    <form action="#" method="post">
+
+        <h3>Choosing a Course</h3>
+
+        <label for="course">Course :</label>
+        <input type="checkbox" id="course" name="course" value="python" />Python
+        <input type="checkbox" id="course" name="course" value="html" />HTML
+        <input type="checkbox" id="course" name="course" value="css" />CSS 
+        <input type="checkbox" id="course" name="course" value="javascript" />JavaScript
+        <input type="checkbox" id="course" name="course" value="mysql" />MySQL   <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <hr style="height: 2px; background: black;">
+
+    <p><bold><strong><u>In checkbox we can choose multiple options but in radio butten only we can choose 
+        like i'm male again you can't be female at the same time for these kind of conditions we will use radio button</u></strong></bold></p>
+
+    <hr style="height: 2px; background: black;">
+
+    <h1>Form with select tag</h1>
+
+    <form action="#" method="post">
+
+        <label for="fruits">Choose a Fruit: </label>
+        <select id="fruits" name="fruits">
+            <option value=""></option>
+            <option value="apple">Apple</option>
+            <option value="banana">Banana</option>
+            <option value="mango">Mango</option>
+            <option value="gauva">Gauva</option>
+        </select>
+
+    </form>
+
+    <br>
+
+    <form action="#" method="post">
+
+        <label for="fruits">Choose a Fruit: </label>
+        <select id="fruits" name="fruits">
+            <option value="" disabled selected>Select a Fruit</option>
+            <option value="apple">Apple</option>
+            <option value="banana">Banana</option>
+            <option value="mango">Mango</option>
+            <option value="gauva">Gauva</option>
+        </select>
+
+    </form>
+
+    <br>
+
+    <form action="#" method="post">
+
+        <label for="location">Choose a Location:</label>
+        <select id="location" name="location">
+            <optgroup label="Hyderabad">
+                <option value="" disabled selected>Select a location</option>
+                <option value="golconda">Golconda</option>
+                <option value="charminar">Charminar</option>
+                <option value="hightech city">Hightech City</option>
+                <option value="gachibowli">Gachibowli</option>
+            </optgroup>
+            <optgroup label="Bengalore">
+                <option value="btm">BTM</option>
+                <option value="hsr">HSR</option>
+                <option value="marathahalli">Marathahalli</option>
+                <option value="agara">Agara</option>
+            </optgroup>
+        </select>
+
+    </form>
+
+    <hr style="height: 2px; background: black;">
+
+    <h1>Form with textarea</h1>
+
+    <form action="#" method="post">
+
+        <label for="address">Address:</label>   <br>
+        <textarea id="address" name="address" rows="5" cols="60"></textarea>
+
+    </form>
+
+    <hr style="height: 2px; background: black;">
+
+    <h1>Form with fieldset tag and legend tag</h1>
+
+    <ul>
+        <li><strong><big><u>&lt;fieldset&gt; tag:</u></big></strong>The &lt;fieldset&gt; tag in HTML is used to group logically related elements within a web form. By default, browsers render a line box (border) around the grouped items to create a clear visual distinction.</li>
+        <li><strong><big><u>&lt;legend&gt;</u></big></strong>A &lt;fieldset&gt; is almost always paired with a &lt;legend&gt; tag, which acts as a caption or heading embedded directly into the border of the box</li>
+    </ul>
+
+    <form action="/submit" method="post">
+
+        <fieldset>
+
+            <legend>Uses Information</legend>
+
+            <label for="firstname">First Name :</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Enter Your First Name" required /> <br><br>
+
+            <label for="lastname">Last Name :</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Enter Your Last Name" required /> <br><br>
+
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" required />  <br><br>
+
+            <input type="submit" value="Submit" />
+
+        </fieldset>
+
+    </form>
+
+    <hr style="height: 2px; background: black;">
+
+    <h1>Form with datalist tag</h1>
+
+    <p>
+        The &lt;datalist&gt; tag in HTML offers predefined options for an &lt;input&gt; field to assist user input.
+        <ul>
+            <li>Users can select a value from the suggested list or enter a custom value.</li>
+            <li>Enhances form usability by providing autocomplete suggestions.</li>
+        </ul>
+    </p>
+
+    <form action="#" method="post">
+
+        <label for="cars">Cars :</label>
+        <input list="cars">
+
+        <datalist id="cars">
+            <option value="BMW" />
+            <option value="Bently" />
+            <option value="Mercedes" />
+            <option value="Audi" />
+            <option value="Volkswagen" />
+        </datalist>
+
+    </form>
+
+    <hr style="height: 2px; background: black;">
+
+    <h1>Form with File select box</h1>
+
+    <p>The file input allows users to select a file from their local device and upload it. It is created using the &lt;input&gt; element with type="file".</p>
+
+    <form action="#" method="post">
+
+        <label for="fileupload">Upload a File:</label>
+        <input type="file" id="fileupload" name="fileupload" />
+
+    </form>
+
+    <hr style="height: 2px; background: black;">
+
+    <h1>Form with Reset and Submit Buttons</h1>
+
+    <p>Submit and reset buttons are essential in HTML forms. The submit button sends the form data to the server, while the reset button restores the form fields to their default values.</p>
+
+    <center>
+
+        <form action="#" method="post">
+
+            <fieldset>
+
+                <legend>Personal Information</legend>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter Your Name" />  <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email=id" required>  <br><br>
+
+                <label for="phno">Phone Number:</label>
+                <input type="tel" id="phno" name="phno" value="+91" required>  <br><br>
+                
+                <input type="submit" value="Submit">  <br><br>
+                <input type="reset" value="Reset">
+
+            </fieldset>
+
+        </form>
+
+    </center>
+
+    <hr style="height: 2px; background: black;"> 
+
+    <h1>From with target attribute</h1>
+
+    <p>The target attribute controls where the results of the form submission will open. By default, it opens in the same window (_self).<br>
+        If you want the result to open in a new tab, set the target attribute to _blank.</p>
+
+    <form action="#" target="_blank" method="post">
+
+        <fieldset>
+
+            <legend>Uses Information</legend>
+
+            <label for="firstname">First Name :</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Enter Your First Name" /> <br><br>
+
+            <label for="lastname">Last Name :</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Enter Your Last Name"/> <br><br>
+
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" />  <br><br>
+
+            <input type="submit" value="Submit" />
+
+        </fieldset>
+
+    </form>
+
+    <a href="#">Back To Top</a>
+    
+    <hr style="height: 3px; background: black;">
+
+
+    <footer align="center">
+        <p>&copy; 2026  &emsp; | &emsp; HTML Forms  &emsp; | &emsp; Akki Sai Kumar Reddy.</p>
+    </footer>
+    
+</body>
+
+</html>

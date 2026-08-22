@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML iframe</title>
+
+</head>
+
+<body>
+
+    <h1 style="background-color: aquamarine; text-align: center;">iframe</h1>
+
+    <p>Beyond the Basics in HTML there are also advance concept exists. So, once you have mastered the fundamental building blocks of HTML, we can explore advanced HTML concepts for dynamic, interactive, and meaningful web pages.</p>
+    
+    <h1>HTML - iframes</h1>
+
+    <p>An iframe, or Inline Frame, is an HTML element represented by the &lt;iframe&gt;tag.<br>
+        It functions as a 'window' on your webpage through which visitors can view and interact with another webpage from a different source.</p>
+
+    <p>
+        iframes are used for various purposes like:
+        <ul>
+            <li><strong><u>Embedding Multimedia: :</u></strong>Easily integrate videos, audio, or animations from platforms like YouTube, etc.</li>
+            <li><strong><u>Including Maps :</u></strong>Embed maps from services like Google Maps directly into your site.</li>
+            <li><strong><u>Loading Forms and Widgets :</u></strong>Incorporate forms or widgets from other sources without writing complex code.</li>
+        </ul>
+    </p>
+
+    <h2>Example 1: Basic iframe Embedding</h2>
+
+    <p>In this example, an iframe is used to display another webpage within the current webpage.</p>
+
+    <iframe src="http://127.0.0.1:5501/Project%20Job%20Searching%20Workshop%20WebSite.html"></iframe>
+
+    <hr>
+
+    <h2>Example 2: Using Height and Width attribute</h2>
+
+    <p>The height and width attributes are used to specify the size of the iframe. The attribute values are specified in pixels by default. You can use pixels or percentages (e.g., “80%”).</p>
+
+    <iframe src="http://127.0.0.1:5501/Project%20Job%20Searching%20Workshop%20WebSite.html" width="400" height="380"></iframe>
+
+    <hr>
+
+    <h2>Example 3: Removing Borders from iframe</h2>
+
+    <p>By default, iframe has a border around it. To remove the border, we must use the style attribute and use the CSS border property.</p>
+
+    <iframe src="http://127.0.0.1:5501/Project%20Job%20Searching%20Workshop%20WebSite.html" width="400" height="380" style="border: none;"></iframe>
+
+    <hr>
+
+    <h2>Example 4: Styling iframe Border Using CSS</h2>
+
+    <p>You can change the size, style, and color of the iframe border using CSS.</p>
+
+    <iframe src="http://127.0.0.1:5501/Project%20Job%20Searching%20Workshop%20WebSite.html" width="400" height="380"  style="border: 4px solid orange;"></iframe>
+
+    <hr>
+
+    <h2>Example 5: iframe Target in Link</h2>
+
+    <p>You can target an iframe with links by using the name attribute of the iframe and the target attribute of the link.</p>
+
+    <p>clink the link next : </p>
+
+    <iframe src="Images/Job Searching Sessions_screenshot.png" width="400" height="380" name="iframe_a"></iframe>
+
+    <p>
+        <a href="http://127.0.0.1:5501/Project%20Job%20Searching%20Workshop%20WebSite.html" target="_blank">My Job Searching Workshop</a>
+    </p>
+
+    <hr>
+
+
+    <footer align="center">
+        <p>&copy; 2026  &emsp; | &emsp; HTML iframes  &emsp; | &emsp; Akki Sai Kumar Reddy.</p>
+    </footer>
+
+</body>
+
+</html>

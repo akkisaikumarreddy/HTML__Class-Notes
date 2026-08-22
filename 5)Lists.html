@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Lists</title>
+
+</head>
+
+<body>
+    
+    <h1 style="background-color: aquamarine; text-align: center;">Lists</h1>
+
+    <p>An HTML list organizes content into ordered or unordered formats, making information clear and easy to read.<br>
+        HTML lists organize content using tags like &lt;ul&gt;, &lt;ol&gt;, &lt;dl&gt;.<br>
+        They improve readability by presenting data in a structured format.
+    </p>
+
+    <h2>Types of HTML Lists</h2>
+    <p>There are three main lists types in HTML :<br>
+        1. Unordered Lists   <br>
+        2. Ordered Lists     <br>
+        3. Discription Lists 
+    </p>
+
+    <br><hr style="height: 2px; background: black;">
+
+    <h2>Unordered Lists</h2>
+
+    <p>An HTML unordered list is used to group related items where the order is not important, typically displayed with bullet points.<br>
+        1.Uses &lt;ul&gt; and &lt;li&gt; tags to structure list items.     <br>
+        2.Displays items with default bullets (can be styled using CSS).  <br>
+        3.Supports nesting to represent hierarchical data.
+    </p>
+
+    <p>here is an example of default unordered list in HTML and how it looks</p>
+    
+    <ul>
+        <li>Python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>MySQL</li>
+    </ul>
+
+    <h2>Unordered Lists Style Types</h2>
+
+    <h3>1.Bullet Points</h3>
+
+    <p>It is a default unordered lists style, you no need to add anything specifically.</p>
+
+    <ul>
+        <li>Python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>MySQL</li>
+    </ul>
+
+    <h3>2.Square Bullets</h3>
+
+    <p>By using { style = "list-style-type: square" } you will get unordered lists in square bullet type.</p>
+
+    <ul style="list-style-type: square;">
+        <li>Python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>MySQL</li>
+    </ul>
+
+    <h3>3.Circle Bullets</h3>
+
+    <p>By using { style = "list-style-type: circle" } you will get unordered lists in square bullet type.</p>
+
+    <ul style="list-style-type: circle;">
+        <li>Python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>MySQL</li>
+    </ul>
+
+    <h3>4.Removing Bullets</h3>
+
+    <p>By using { style = "list-style-type: none" } you will get unordered lists in square bullet type.</p>
+
+    <ul style="list-style-type: none;">
+        <li>Python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>MySQL</li>
+    </ul>
+
+    <h3>5.Nested Unordered Lists</h3>
+
+    <p>A nested unordered list is simply an unordered list &lt;ul&gt; inside another list item &lt;li&gt; of an existing unordered list.</p>
+
+    <ul>
+        <li>
+            Frontend Development
+            <ul style="list-style-type: circle;">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </li>
+        <li>
+            Backend Development
+            <ul style="list-style-type: circle;">
+                <li>Python</li>
+                <li>PHP</li>
+                <li>Django</li>
+            </ul>
+        </li>
+        <li>
+            Database
+            <ul style="list-style-type: circle;">
+                <li>SQL</li>
+                <li>MySQL</li>
+                <li>MangoDB</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Horizontal Unordered Lists</h3>
+
+    <p>The unordered list may need to be displayed horizontally, such as in a navigation menu. This can be accomplished with the help of CSS.</p>
+
+    <p>By using { style = " float: left; margin-right: 10px" } in &lt;li&gt; Tag then this will make list horizantal and with space 10px between them.<br>
+      and also { style="overflow:hidden; list-style-type:none; padding:0; margin:0;" } in &lt;ul&gt; Tag.<br>
+      overflow:hidden -> Ensures the floated items stay inside the list container.
+      padding:0; margin:0;  -> Removes extra spacing around the list.
+
+    </p>
+
+    <ul style="overflow:hidden; list-style-type: none; padding:0; margin:0;">
+        <li style="float:left; margin-right:20px;">Python</li>
+        <li style="float:left; margin-right:20px;">HTML</li>
+        <li style="float:left; margin-right:20px;">CSS</li>
+        <li style="float:left; margin-right:20px;">JavaScript</li>
+        <li style="float:left; margin-right:20px;">MySQL</li>
+    </ul>
+
+    <h3>Using Unordered Lists for Navigation</h3>
+
+    <p>Unordered lists are often used for creating navigation menus on websites.</p>
+
+    <p>
+        &lt;a href="#home"&gt;Home&lt;/a&gt;  →  Anchor link. <br>
+        The href="#home" means: link to an element on the same page that has id="home".<br>
+        If no element with that id exists, the link won’t move anywhere — it just reloads the page at the top.
+    </p>
+
+    <ul style="overflow:hidden; list-style-type: none; padding:0; margin:0;">
+        <li style="float:left; margin-right:20px;"><a href="#home">home</a></li>
+        <li style="float:left; margin-right:20px;"><a href="#about">about</a></li>
+        <li style="float:left; margin-right:20px;"><a href="#services">services</a></li>
+        <li style="float:left; margin-right:20px;"><a href="#contact">contact</a></li>
+    </ul>
+
+    <br><hr style="height: 3px; background: black;">
+
+    <h1>Ordered Lists</h1>
+
+    <p>
+        HTML ordered lists use the tag to present items in a defined sequence, ensuring clear and structured display of step-based or ranked content.
+        <ul>
+            <li>Uses &lt;ol&gt; to create a list with a specific order or sequence.</li>
+            <li>Each item is defined using the &lt;li&gt; tag.</li>
+            <li>Items are automatically numbered or lettered by the browser.</li>
+            <li>Numbering style can be customized using attributes or CSS.</li>
+            <li>Commonly used for instructions, steps, and rankings.</li>
+        </ul>
+    </p>
+
+    <p>Here is an simple default ordered list example.</p>
+
+    <ol>
+        <li>Python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>MySQL</li>
+    </ol>
+
+    <h2>Different Type Attributes in HTML Ordered List</h2>
+
+    <ol>
+        <li><strong>type="1":</strong> This will list the items with numbers (default)</li>
+        <li><strong>type="A":</strong> This will list the items in uppercase letters.</li>
+        <li><strong>type="a":</strong> This will list the items in lowercase letters.</li>
+        <li><strong>type="I":</strong> This will list the items with uppercase Roman numbers.</li>
+        <li><strong>type="i":</strong> This will list the items with lowercase Roman numbers.</li>
+    </ol>
+
+    <h3>1.Numbered Ordered List</h3>
+
+    <p>To create an ordered list in HTML with numerical markers, which is the default behavior for ordered lists, you simply use the &lt;ol&gt; (ordered list) tag without specifying a type attribute.</p>
+
+    <ol>
+        <li>Python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>MySQL</li>
+    </ol>
+
+    <h3>2.Uppercase Letters Ordered Lists</h3>
+
+    <p>By using attribute { type= "A" } in &lt;ol&gt; you can display list items in uppercase alphabetical order.</p>
+
+    <ol type="A">
+        <li>Python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>MySQL</li>
+    </ol>
+
+    <h3>3.Lowercase Letters Ordered List</h3>
+
+    <p>By using attribute { type= "a" } in &lt;ol&gt; you can display list items in lowercase alphabetical order.</p>
+
+    <ol type="a">
+        <li>Python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>MySQL</li>
+    </ol>
+
+    <h3>4.Uppercase Roman Numbers Ordered List</h3>
+
+    <p>By using attribute { type= "I" } in &lt;ol&gt; you can display list items in uppercase Roman numbers order.</p>
+
+    <ol type="I">
+        <li>Python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>MySQL</li>
+    </ol>
+
+    <h3>5.lowercase Roman Numbers Ordered List</h3>
+
+    <p>By using attribute { type= "i" } in &lt;ol&gt; you can display list items in lowercase Roman numbers order.</p>
+
+    <ol type="i">
+        <li>Python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>MySQL</li>
+    </ol>   
+    
+    <h3>6.Reverse Ordered List</h3>
+
+    <p>By using attribute { reversed } in &lt;ol&gt; you can display list items in Reverse order.</p>
+
+    <ol reversed>
+        <li>Python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>MySQL</li>
+    </ol> 
+
+    <h3>7.Control List Counting</h3>
+
+    <p>By using attribute { start = "5" } in &lt;ol&gt; you can display list items from the number 5.</p>
+
+    <ol start="5">
+        <li>Python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>MySQL</li>
+    </ol> 
+
+    <h3>8.Control List by Uppercase alphabetical order</h3>
+
+    <p>
+        By using attribute { type = "A" start = "5" } in &lt;ol&gt; you can display list items in Uppercase Alphabeticl Order from E and then F,G,H .... and so on. <br>
+        By using attribute { type = "A" start = "27" } in &lt;ol&gt; you can display list items in Uppercase Alphabeticl Order from AA,AB,AC..... and so on.</p>
+
+    <ol type="A" start="5">
+        <li>Python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>MySQL</li>
+    </ol>
+
+    <ol type="A" start="27">
+        <li>Python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>MySQL</li>
+    </ol>
+
+    <h3>9.Control List by Lowercase alphabetical order</h3>
+
+    <p>
+        By using attribute { type = "A" start = "5" } in &lt;ol&gt; you can display list items in Lowercase Alphabeticl Order from e,f,g,h.... and so on.<br>
+        By using attribute { type = "a" start = "27" } in &lt;ol&gt; you can display list items in Lowercase Alphabeticl Order from aa,ab,ac..... and so on.</p>
+
+    <ol type="a" start="5">
+        <li>Python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>MySQL</li>
+    </ol>
+
+    <ol type="a" start="27">
+        <li>Python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>MySQL</li>
+    </ol>
+
+    <h3>10.Nested Ordered Lists</h3>
+
+    <p>Nested ordered lists use  &lt;ol&gt; inside  &lt;li&gt; tags to create sublists, making content more organized.
+    
+    <ol>    
+        <li>
+            Frontend Development
+            <ol type="a">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+        </li>
+        <li>
+            Backend Development
+            <ol type="a">
+                <li>Python</li>
+                <li>PHP</li>
+                <li>Django</li>
+            </ol>
+        </li>
+        <li>
+            Database
+            <ol type="a">
+                <li>SQL</li>
+                <li>MySQL</li>
+                <li>MangoDB</li>
+            </ol>
+        </li>
+    </ol>
+
+    <hr style="height: 3px; background: black;">
+
+    <h1>Description Lists</h1>
+
+    <p>
+        An HTML description list is used to represent term-definition or name–value pairs in a structured format.
+        <ul>
+            <li>Organizes data in term-description pairs.</li>
+            <li>Improves content clarity and semantic meaning.</li>
+            <li>Enhances accessibility for screen readers.</li>
+            <li>Allows flexible structure with multiple descriptions per term.</li>
+        </ul>
+    </p>
+
+    <p>Here is an example of Description lists</p>
+
+    <dl>
+        <dt>HTML :</dt>
+        <dd>HyperText Markup Language</dd>
+
+        <dt>CSS :</dt>
+        <dd>Cascading Style Sheets</dd>
+
+        <dt>JavaScript :</dt>
+        <dd>Scripting language for Web pages</dd>
+    </dl>
+
+    <p>
+        We don't have any different types of description lists like unordered lists or ordered list.<br>
+        we have only one type that is Nested Discription lists just like we have in unordered lists and ordered lists.
+    </p>
+
+    <h3>Nested Description List</h3>
+
+    <p>A nested description list is when we add a description list inside another description list. This allows for organizing related terms and their definitions in a hierarchical structure.</p>
+    
+    <dl>
+        <dt>HardWare</dt>
+        <dl>
+            Physical Devices
+            <dl>
+                <dt>CPUs</dt>
+                <dl>Processors</dl>
+
+                <dt>GPUs</dt>
+                <dd>Graphics</dd>
+            </dl>
+        </dl>
+
+        <dt>SoftWare</dt>
+        <dd>
+            Programs/Apps
+            <dl>
+                <dt>System</dt>
+                <dd>OS</dd>
+
+                <dt>Aplication</dt>
+                <dd>Tools</dd>
+            </dl>
+        </dd>
+    </dl>
+
+    <hr style="height: 3px; background: black;">
+
+    <footer align="center">
+        <p>&copy; 2026  &emsp; | &emsp; HTML Lists  &emsp; | &emsp; Akki Sai Kumar Reddy.</p>
+    </footer>
+
+</body>
+
+</html>

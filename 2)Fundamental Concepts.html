@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Fundamental Concepts</title>
+
+</head>
+
+<body>
+
+    <header align="center" style="background-color: aquamarine;">
+
+        <h1>HTML Fundamental Concepts</h1>
+
+        <a href="#structure">Structure</a> &emsp; | &emsp;
+        <a href="#element">Element</a>  &emsp; | &emsp;
+        <a href="#attributes">Attributes</a>   &emsp; | &emsp;
+        <a href="#semantics">Semantics</a>   &emsp; | &emsp;
+        <a href="#entitles">Entitles</a>   &emsp; | &emsp;
+        <a href="#symbols">Symbols</a>
+
+    </header>
+
+    <main>
+
+        <section>
+
+            <h2 id="structure">HTML Structure</h2>
+
+            <p>HTML is a markup language used to structure and organize content on webpage,It helps the browser understand the content and show it the right way.</p>
+
+            <ul>
+                <li>Uses elements (tags) enclosed in angle brackets.</li>
+                <li>Tags usually come in pairs, i.e., (opening and closing tags).</li>
+                <li>Defines structure for text, images, links, videos, etc.</li>
+                <li>It helps the browser show the content clearly so people can read it easily.</li>
+            </ul>
+
+            <p>When we use <strong><u><i>" shift + ! " and "enter"</i></u></strong> you will get a basic HTML Structure. In That the main elements or Tags are :
+            
+                <ul>
+                    <li><strong><u>!DOCTYPE html : </u></strong>The !DOCTYPE html declaration is used to specify the version of HTML. In this case, it indicates that the document is written in HTML5, which is the latest version of HTML.</li>
+                    <li><strong><u>html : </u></strong>The html element is the root element of the HTML document. Everything inside this element is considered part of the HTML document.</li>
+                    <li><strong><u>head : </u></strong>The head section contains metadata about the document that isn't displayed on the webpage.</li>
+                    <li><strong><u>body : </u></strong>The body tag contains the actual content of the webpage that will be visible to users, such as text, images, and links.</li>
+                </ul>
+            </p>
+
+        </section>
+
+        <br><hr size="3" color="black"><br>
+
+        <section>
+
+            <h2 id="elements">HTML Elements</h2>
+
+            <p>HTML elements are the basic building blocks of a webpage, defining its structure and content using start tags, content, and end tags.
+
+                <ul>
+                    <li>HTML elements start with an opening tag <tagname> and end with a closing tag </tagname>, and can contain text, attributes, or other nested elements.</li>
+                    <li>Some elements are self-closing (e.g., br, hr, img), and browsers use elements to render the page visually.</li>
+                    <li>HTML tags are not case-sensitive. For example, 'B' and 'b' both represent bold text.</li>
+                    <li>However, it’s a best practice to use lowercase tags for consistency and readability.</li>
+                </ul>
+            </p>
+
+            <p><strong>Necessary to Add an End Tag: </strong>It Always include closing tags for non-void HTML elements, as missing tags can cause unexpected browser layout issues.
+            
+                <ul>
+                    <li>Browsers may auto-add missing closing tags.</li>
+                    <li>This can lead to unexpected layout issues.</li>
+                    <li>Always include closing tags for non-void HTML elements(element that must have both an opening tag and a closing tag).</li>
+                </ul>
+            </p>
+
+            <p><strong>HTML Empty Element: </strong>HTML Elements without any content i.e., that do not print anything are called Empty elements. Empty HTML elements do not have an ending tag.</p>
+
+        </section>
+
+        <br><hr size="3" color="black" noshade><br>
+
+        <section>
+
+            <h2 id="attributes">HTML Attributes</h2>
+
+            <p>
+                HTML Attributes are special words used within the opening tag of an HTML element. They provide additional information about HTML elements.<br>
+                HTML attributes are used to configure and adjust the element's behaviour, appearance, or functionality in a variety of ways.
+                
+                <ul>
+                    <li>Each attribute has a name and a value, formatted as name="value".</li>
+                    <li>Attributes give extra instructions to the browser about how an element should look or act.</li>
+                </ul>
+            
+            </p>
+
+            <img src="Images/india worldcup.jpg" alt="Lifting the ODI World Cup" width="400" height="200">
+            <ul>
+                <li><strong><big>Tag :</big></strong>img</li>
+                <li><strong><big>Attribute> :</big></strong>src</li>
+                <li><strong><big>Purpose :</big></strong>The  <img>  tag is used for embedding images in an HTML page. The  src  attribute within the  <u>img  tag</u> specifies the path to the image file you wish to display. This attribute is crucial as it directs the browser to the image’s location on the internet or a local directory.</li>
+            </ul>
+
+            <p>
+                <strong><big><u>Types of HTML Attributes</u></big></strong>
+
+                <br><br>
+
+                <strong><big>Common HTML Attributes:</big></strong>
+
+                <ul>
+                    <li><strong><u>alt Attribute :</u></strong>"The alt attribute gives a text description of an image so people and browsers know what it shows if the image can’t be seen.</li>
+                    <li><strong><u>width and height Attribute :</u></strong>The width and height Attribute is used to adjust the width and height of an image(in pixels).</li>
+                    <li><strong><u>id Attribute :</u></strong>The id attribute in HTML assigns a unique identifier to an element, allowing it to be targeted by CSS and JavaScript for styling and manipulation purposes.</li>
+                    <li><strong><u>title Attribute :</u></strong>The title attribute adds extra information about an element, usually shown as a tooltip when you hover over it.</li>
+                    <li><strong><u>href Attribute :</u></strong>The href attribute in HTML, used with the <u>a tag</u>, specifies a link destination. Clicking the linked text navigates to this address. Adding `target="_blank"` opens it in a new tab.</li>
+                    <li><strong><u>style Attribute :</u></strong>The style attribute is used to provide various CSS effects to the HTML elements such as increasing font-size, changing font-family, coloring, etc</li>
+                    <li><strong><u>lang attribute :</u></strong>The language is declared with the lang attribute. Declaring a language can be important for accessibility applications and search engines.</li>
+
+                </ul>
+                
+                <br><br>
+
+                <strong><big><u>Global HTML Attributes</u></big></strong>
+
+                <u>
+                    <li><strong><u>class Attribute:</u></strong>Groups elements and allows styling.</li>
+                    <li><strong><u>style Attribute:</u></strong>inline css styling</li>
+                    <li><strong><u>contenteditable:</u></strong>Determines whether the content within the element is editable.</li>
+                    <li><strong><u>role Attribute:</u></strong>Specifies the element’s accessibility role.</li>
+                    <li><strong><u>tabindex Attribute:</u></strong>Determines the order of focus during keyboard navigation.</li>
+                    <li><strong><u>id Attribute:</u></strong>Assigns a unique identifier to an element, allowing targeting with CSS or JavaScript.</li>
+                    <li><strong><u>title Attribute:</u></strong>Creates a tooltip that appears when a user hovers over the element.</li>
+                    <li><strong><u>lang Attribute:</u></strong>Specifies the language of the element’s content, aiding with translation and accessibility.</li>
+                </u>
+
+            </p>
+
+        </section>
+
+        <br><hr size="3" color="black" noshade><br>
+
+        <section>
+
+            <h2 id="semantics">HTML Semantic Elements</h2>
+
+            <p>HTML5 semantic elements provide meaningful tags that clearly describe their purpose, improving readability, accessibility, and SEO for both humans and browsers.</p>
+
+            <ul>
+                <li>Clearly define the role and content of elements.</li>
+                <li>Improve code readability and structure.</li>
+                <li>Enhance accessibility for screen readers</li>
+                <li>Help browsers and search engines understand page content.</li>
+            </ul>
+
+            <br>
+            
+            <strong><bold>Semantic Elements: </bold></strong>
+
+            <h2>The Header Tag</h2>
+
+            <p>As the name suggests, it is for the header of a section introductory of a page. There can be multiple headers on a page.</p>
+
+            <header>
+                <h2>Web Development</h2>
+                <h3>Html Tutorial</h3>
+                <h4>Html Tags</h4>
+            </header>
+
+            <hr>
+
+            <h2>div tag</h2>
+
+            <p>The <u>div</u> tag is one of the most widely used HTML elements, helping divide a webpage into clear, structured sections.<br>It acts as a flexible container for text, images, and links, easily styled and customized with CSS.
+                <ul>
+                    <li>div is commonly used to organize and structure webpage content.</li>
+                    <li>It is block level but can act inline with display: inline-block.</li>
+                    <li>It can be easily styled with CSS for color, spacing, size, and layout.</li>
+                </ul>
+            </p>
+
+            <div >The first div tag with some content without using CSS</div>
+
+            <div style="background-color: lightgreen; padding: 20px; border: 2px solid green;">The second div tag with some content with using CSS</div>
+
+            <div style="background-color: lightcoral; padding: 20px; border: 2px solid red;">The third div tag with some content with using CSS</div>
+
+            <hr>
+
+            <h2>article Tag</h2>
+
+            <p>
+                The HTML <u>article</u> tag defines a self-contained, independent piece of content that can be reused or distributed separately.
+                <ul>
+                    <li>Used for content like blog posts, news articles, or forum posts.</li>
+                    <li>Represents independent and meaningful sections of a webpage.</li>
+                    <li>Can contain headings, paragraphs, images, and other elements.</li>
+                </ul>
+            </p>
+
+            <article>
+                <h2>Understanding HTML</h2>
+                <p>HTML (HyperText Markup Language) is the standard language for creating and structuring web pages using tags and elements.</p>
+            </article>
+
+            <hr>
+
+            <h2>aside Tag</h2>
+
+            <p>The <u>aside</u> is used to place content in a sidebar i.e. aside from the existing content. It is related to surrounding content.</p>
+
+            <aside>
+                <h3>Sidebar Content</h3>
+                <p>This is some content that will be displayed in the sidebar.</p>
+            </aside>
+
+            <hr>
+
+            <h2>The Details and Summary Tag</h2>
+
+            <p>The <u>details</u> tag defines additional details that the user can hide or view. <br><u>summary</u> defines a visible heading for a "details" element.</p>
+
+            <details>
+                <summary>HTML</summary>
+                <p>HTML (HyperText Markup Language) is the standard language for creating and structuring web pages using tags and elements.</p>
+            </details>
+
+            <hr>
+
+            <h2>figure and figcaption Tags</h2>
+
+            <p>The <u>figure</u> tag in HTML is used to include self-contained content like images, diagrams, or code that is related to the main content but can stand independently.</p>
+
+            <p>The <u>figcaption</u> tag is used to define a caption for the <u>figure</u> element.</p>
+
+            <figure>
+                <img src="Images/Luffy.jpg" alt="Luffy" width="300" height="200">
+                <figcaption>Monkey D. Luffy</figcaption> 
+            </figure>
+
+            <hr>       
+
+            <h2>Main Tag</h2>
+
+            <p>The <u>main</u> tag specifies the main content of a webpage.</p>
+
+            <main>
+                <h3>Main Content</h3>
+                <p>This is the main content of the page.</p>
+
+                <article>
+                    <h2>Understanding HTML</h2>
+                    <p>HTML (HyperText Markup Language) is the standard language for creating and structuring web pages using tags and elements.</p>
+                </article>
+            </main>
+
+            <hr>
+            
+            <h2>Section Tag</h2>
+
+            <p>The <u>section</u> tag is used to define a section in a document.</p>
+
+            <section>
+                <h3>Section 1</h3>
+                <p>This is the first section of the page.</p>
+            </section>
+
+            <hr>
+
+            <h2>nav Tag</h2>
+
+            <p>The <u>nav</u> tag is used to define a section of navigation links on a webpage.</p>
+
+            <nav>
+                <a href="https://www.google.com/" target="_blank">Visit Google</a>    <br>
+                <a href="https://www.youtube.com/" target="_blank">Visit YouTube</a>  <br>
+                <a href="https://www.facebook.com/" target="_blank">Visit Facebook</a>
+            </nav>
+
+            <hr>
+
+            <h2>footer Tag</h2>
+
+            <p>The <u>footer</u> tag is used to define a footer for a document or section.</p>
+
+            <footer>
+                <p>&copy; 2024 My Website. All rights reserved.</p>
+            </footer>
+
+            <hr>
+
+            <h2>Time Tag</h2>
+
+            <p>The <u>time</u> tag is used to define a specific time or date.</p>
+
+            <p>This article published on <time datetime="2026-06-06">June 6, 2026</time>.</p>
+
+            <p>I slept at <time datetime="22:00">10:00 PM</time>.</p>
+
+        </section>
+
+        <br><hr size="3" color="black" noshade><br>
+
+        <section>
+
+            <h2 id="entities">HTML Entities</h2>
+
+            <p>HTML Entities are special codes used to display reserved characters, symbols, or invisible spaces in a webpage that cannot be typed directly or have special meanings in HTML (like &lt;, &gt;, or &amp;).</p>
+
+            <br>
+
+            <strong><big>HTML Entities</big></strong>
+
+            <p>Less than symbol: &lt;</p>
+            <p>Greater than symbol: &gt;</p>
+            <p>Ampersand Symbol: &amp;</p>
+            <p>Copyright Symbol: &copy; 2026 My WebSite</p>
+            <p>Registered Symbol: &reg; Trademark</p>
+            <p>Non-breaking space ex : Hello&nbsp;World</p>
+            <p>En space (equals 2 regular spaces) ex: Hello&ensp;World</p>
+            <p>Em space (equals 4 regular spaces) ex: Hello&emsp;World</p>
+            <p>Thin space (narrower than a standard space) ex: Hello&thinsp;World</p>
+            <br>
+            <p>Euro : &euro; or &#8364;</p>
+            <p>Yen : &yen; or &#165;</p>
+            <p>exist: &exist;</p>
+
+        </section>
+
+        <br><hr size="3" color="black" noshade><br>
+
+        <section>
+
+            <h2 id="symbols">HTML Symbols</h2>
+
+            <p>HTML symbols are special characters used to display characters not on the keyboard or that might conflict with HTML code.</p>
+
+            <p>This is the sign of Trade mark : &trade;</p>
+
+            <p>This is the sign of 'at' Symbol : &commat;</p>
+
+            <p>This is the sign of paragraph : &para;</p>
+
+            <p> Like this there are many more symbols and entitles are there.</p>
+
+        </section>
+
+    </main>
+
+    <br><hr size="3" color="black" noshade><br>
+
+    <footer align="center">&copy; 2026  &emsp; &emsp; | &emsp; &emsp; HTML Fundamental Concepts</footer>
+
+</body>
+
+</html>

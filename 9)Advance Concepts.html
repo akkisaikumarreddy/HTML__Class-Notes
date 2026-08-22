@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Advanced Concepts</title>
+
+    <link rel="icon" href="Icons/galery.png" type="galery/png">
+
+</head>
+
+<body>
+
+    <h1 style="background-color: aquamarine; text-align: center;">HTML Advance Concepts</h1>
+
+    <p>Beyond the Basics in HTML there are also advance concept exists. So, once you have mastered the fundamental building blocks of HTML, we can explore advanced HTML concepts for dynamic, interactive, and meaningful web pages.</p>
+
+    <h2>HTML File Paths</h2>
+
+    <p>
+        HTML file paths specify the location of resources like images, videos, scripts, and documents so the browser can load them correctly.
+        <ul>
+            <li>Help the browser locate and load external resources.</li>
+            <li>Used for files such as images, videos, scripts, and documents.</li>
+            <li>Specified using attributes like src and href.</li>
+        </ul>
+    </p>
+
+    <h3>Types of File Paths</h3>
+
+    <p>File paths can be absolute or relative, depending on how the resource location is specified.</p>
+
+    <h3>1. Absolute File Paths</h3>
+
+    <p>It specifies the full URL or complete location of a resource, starting from the root of the website or including the domain name.</p>
+
+    <img src="https://static0.cbrimages.com/wordpress/wp-content/uploads/2025/08/naruto-uzumaki-was-a-terrible-friend-ninja-and-husband-here-s-why-1.jpg?w=1600&h=900&fit=crop" alt="Naruto" width="400" height="220" />
+
+    <h3>2.Relative File Paths</h3>
+
+    <p>Relative file paths locate resources based on the HTML file’s location, keeping links portable</p>
+
+    <img src="Images/Naruto(1).jpg" alt="Naruto" width="400" height="220" />
+
+    <hr style="height: 2px; background: black;">
+
+    <h2>HTML Favicon</h2>
+
+    <p>A favicon is a small image displayed next to a website’s title in the browser tab. It helps users quickly recognize and return to a website.</p>
+
+    <p>we will give link in iside &lt;head&gt; element </p>
+
+    <p>Afer link given inside the  &lt;head&gt; element you can see icon at top-left side of our webpage. </p>
+
+    <hr style="height: 2px; background: black;">
+
+    <h2>HTML Computer Code Elements</h2>
+
+    <h3>code Tag</h3>
+
+    <p>HTML provides the &lt;code&gt; element to display programming code clearly on a webpage, making it visually distinct and easy to read.</p>
+
+    <p><strong>The &lt;code&gt; tag is used to represent computer code snippets in HTML documents.</strong></p>
+
+    <pre>
+    <code>
+    #include &lt;stdio.h&gt; 
+    int main() {  
+        printf("Hello Geeks");
+        return 0;
+    }
+    </code>
+    </pre>
+
+    <h3>kbd Tag</h3>
+
+    <p>The &lt;kbd&gt; tag is used to define keyboard input. The text between he `&lt;kbd&gt;` tags represents text that should be typed on a keyboard.</p>
+
+    <section align="center">
+        <kbd>Alt</kbd>
+        <kbd>+</kbd>
+        <kbd>Tab</kbd>
+        <span>is used to switch between open tabs</span>
+    </section>
+
+    <h3>pre Tag</h3>
+
+    <p>The `&lt;pre&gt;` tag in HTML defines a block of preformatted text, preserving spaces, line breaks, tabs, and other formatting characters that browsers usually ignore.</p>
+
+    <pre>
+        h   e ll      0    w orld  ! 
+    </pre>
+
+    <h3>samp Tag</h3>
+
+    <p>The `&lt;samp&gt;` tag is used to define sample output from a computer program. It encloses inline text representing a sample or quoted output from a program.</p>
+
+    <div style="font-size: 20px; font-weight: bold; text-align: center;">&lt;samp&gt; tag</div>
+    <p style="text-align: center;"><samp>A computer science portal for Geeks</samp></p>
+
+    <!-- i tried using style in samp tag but it didn't work so i used paragraph tag and five samp tag inside it and i applied style to <P> tag-->
+
+    <hr style="height: 2px; background: black;">
+
+    <h2>Add Audio to the webpage</h2>
+
+    <p>The HTML &lt;audio&gt; element is used to add audio content to a webpage, allowing you to play music, sound effects, or other audio files directly in the browser.</p>
+
+    <p><strong>syntax:</strong></p>
+
+    <pre>
+    <code>
+    &lt;audio&gt;
+        &lt;source src="sample.mp3" type="audio/mpeg"&gt;
+    &lt;/audio&gt;
+    </code>
+    </pre>
+
+    <audio>
+        <source src="Audios/23 Theme (From _AA23_) - NaaSongs.mp3" type="audio/mpeg">
+    </audio>
+
+    <hr style="height: 2px; background: black;">
+
+    <h2>HTML Video</h2>
+
+    <p>The &lt;video&gt; element in HTML is used to show video content on web pages. It supports various video formats, including MP4, WebM, and Ogg. It is introduced in HTML5.</p>
+
+    <p><strong>Syntax:</strong></p>
+
+    <pre>
+    <code>
+    &lt;video src="" controls&gt;   &lt;/video&gt;
+               or
+    &lt;&gt;video controls="controls">&gt;
+    &lt;&gt;source src="video_filename" type="video_type">&gt;
+    &lt;/video&gt;
+    </code>
+    </pre>
+
+    <video controls="" height="240" width="320">
+        <source src="Videos/countdown  from 60 to 0.mp4" type="video/mp4">Sample Video
+    </video>
+
+
+    <footer align="center">
+        <p>&copy; 2026  &emsp; | &emsp; HTML Advanced Concepts  &emsp; | &emsp; Akki Sai Kumar Reddy.</p>
+    </footer>
+    
+</body>
+
+</html>
